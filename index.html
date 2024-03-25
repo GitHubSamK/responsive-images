@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Responsive Background Image</title>
+</head>
+
+<body>
+    <h1>Responsive Images</h1>
+    <figure>
+        <img src="images/pexels-nina-uhlikova-287240.jpg" alt="object fit image" class="objectfit">
+        <figcaption>object fit example</figcaption>
+    </figure>
+    <figure>
+        <img class="responsiveset" src="images/1000.png" srcset="images/300.png 900w,
+images/400.png 1000w,
+images/800.png 1200w" sizes="(max-width: 720px) 100vw, 100vw" alt="responsiveimages">
+        <figcaption>responsive image</figcaption>
+    </figure>
+
+<section>
+    <figure>
+    <picture>
+        <source
+          media="(orientation:landscape)"
+          srcset="images/300.png 300w, images/800.png 800w, images/1000.png 1000w"
+          sizes="(min-width: 950px) 80vw, 
+      (min-width: 750px) 60vw, 
+      100vw"/>
+        <img src="images/300.png" alt="Image description" />
+      </picture>
+      </figure>
+      <figcaption>landscape image orientation media</figcaption>
+</section>
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect x="25" y="25" width="50" height="25" fill="black" />
+  </svg>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+h1{
+
+    text-align: center;
+}
+
+body {
+    background-image:url(../images/pexels-jill-wellington-39853.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #002fff; 
+  
+    
+}
+
+figcaption{
+
+    text-align: center;
+    background-color: aliceblue;
+    width: 20%;
+    margin: auto;
+}
+img{
+
+    display: block;
+    margin: auto;
+}
+
+.objectfit{
+
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+
+.responsiveset{
+
+display: block;
+margin: auto;
+}
+
+section{
+    display: block;
+    margin: auto;
+}
+
+svg{
+    display: block;
+  margin: auto;  
+}
+
+
+@media (max-width: 720px) {
+    body {
+        background-position: top center; 
+    }
+
+    .objectfit{
+        width: 300px;
+        height: 300px;
+    }
+}
